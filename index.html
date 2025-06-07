@@ -3,27 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Pietro</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
+    <title>Formulario Profissional</title>
 </head>
 <body>
-    <nav class="menu">
-        <a href="#">Entrar</a>
-        <a href="#">Fazer login</a>
-    </nav>
+    <form>
+        <fieldset>
+        <legend>Meu Formulário</legend>
+        <div><input type="text" name="nome" placeholder="Digite o seu nome" /></div>
+        <div><input type="text" name="email" placeholder="Digite o seu email" /></div>
+        <div>
+            <select name="lista">
+                <option disabled selected>Qual sua idade?</option>
+                <option value="20">20</option>
+                <option value="25+">25+</option>
+                <option value="40+">40+</option>
 
-    <main>
-        <section class="login-container">
-            <h2>Login</h2>
-            <form>
-                <input type="email" placeholder="Login" id="login" />
-                <input type="password" placeholder="Senha" id="senha" />
-                <input type="submit" value="Entrar"  />
-            </form>
-        </section>
-    </main>
+            </select>
+        </div>
 
-    <script src="script.js"></script>
+            
+            <h2>Qual sua cidade?</h2>
+            <div class="input" >
+            <div>
+            <input type="radio" name="cidade" value="Campinas" /><span>Campinas</span>
+            </div>
+            <div>
+            <input type="radio" name="cidade" value="São Paulo" /><span>São Paulo</span>
+            </div>
+            <div>
+            <input type="radio" name="cidade"  value="Bragança Paulista" /><span>Bragança Paulista</span>
+            </div>
+
+            </div>
+
+             <h2>O que você gosta de comer?</h2>
+            <div class="input" >
+            <div>
+            <input type="checkbox" name="cidade[]" value="Comida Caseira" /><span>Comida Caseira</span>
+            </div>
+            <div>
+            <input type="checkbox" name="cidade[]" value="Fast Food" /><span>Fast Food</span>
+            </div>
+            <div>
+            <input type="checkbox" name="cidade[]" value="Frutas e Vegetais" /><span>Frutas e Vegetais</span>
+            </div>
+
+            </div>
+
+            <div>
+                <textarea name="observação" placeholder="Possui alguma observação?"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" name="ação" value="Enviar" >
+            </div>
+    </fieldset>
+    </form>
+        
 </body>
 </html>

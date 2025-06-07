@@ -4,90 +4,96 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url(https://img.freepik.com/vetores-gratis/fundo-preto-com-linhas-onduladas_52683-76524.jpg?semt=ais_hybrid&w=740);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    color: #fff;
+html,body {
+    height:100%;
 }
 
-/* NAV */
-.menu {
-    width: 100%;
-    height: 50px;
-    background-color: steelblue;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 20px;
+
+form
+{
+    width: 96%;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align:center;
 }
 
-.menu a {
-    margin-left: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
+form fieldset
+{
+    padding: 20px 40px;
+    border:1px solid #ccc;
 }
 
-.menu a:hover {
-    color: #d3d3d3;
+form legend
+{
+    font-size: 17px;
+    color:rgb(130,130,130)
 }
 
-/* LOGIN CONTAINER */
-.login-container {
-    max-width: 400px;
-    margin: 100px auto;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    text-align: center;
+form input[type=text]
+{
+    margin-top: 30px;
+    max-width: 80%;
+    width: 80%;
+    padding: 10px 13px;
+    border: 1px solid #ccc;
 }
 
-.login-container h2 {
-    margin-bottom: 30px;
-    font-weight: 500;
-    font-size: 28px;
+form input[type=text]:focus, form select:focus, form textarea:focus{
+    outline: 0;
 }
 
-/* FORM INPUTS */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+form select
+{
+    font-family: tahoma;
+    color:rgb(100,100,100);
+    width:calc(80% + 26px);
+    margin-top:30px;
+    padding:10px 13px;
+    display:inline-block;
+    border: 1px solid #ccc;
 }
 
-form input[type="email"],
-form input[type="password"] {
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
+form h2
+{
+    margin-top: 20px;
+    color: rgb(100,100,100);
+}
+
+.input{
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.input span{
+    margin-left: 13px;
     font-size: 16px;
-    outline: none;
-    transition: box-shadow 0.3s;
+    color: rgb(130,130,130)
 }
 
-form input[type="email"]:focus,
-form input[type="password"]:focus {
-    box-shadow: 0 0 5px steelblue;
+form input[type=submit]
+{
+    font-family: tahoma;
+    margin-top: 30px;
+    border: 0;
+    font-size: 16px;
+    width:140px;
+    height:40px;
+    cursor:pointer;
+    border: 2px solid rgb(130,130,130);
+    color:white;
+    background-color: rgb(140,140,140);
 }
 
-/* BOTÃO */
-form input[type="submit"] {
-    background-color: steelblue;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
+form textarea
+{
+    font-family: tahoma;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    width: 80%;
+    height: 140px;
+    padding: 10px 13px;
+    resize: none;
 }
 
-form input[type="submit"]:hover {
-    background-color: #1c5d8a;
-}
+    
